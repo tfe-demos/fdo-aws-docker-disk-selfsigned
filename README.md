@@ -43,9 +43,10 @@ If not monitor with `cloud-init status --wait` till finished then re-login to th
 ```
 env | grep TFE
 ```
-
-### Confirm CA is added to Ubuntu trust store
+- Confirm CA is added to Ubuntu trust store
+```
 ls -lrt /etc/ssl/certs/ | grep bundle
+```
 
 ### Deploy TFE
 ```
